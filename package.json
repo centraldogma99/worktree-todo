@@ -1,0 +1,24 @@
+{
+  "name": "worktree-todo",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm --filter app dev",
+    "build": "pnpm --filter '*' build",
+    "test": "pnpm --filter '*' test",
+    "lint": "pnpm --filter '*' lint",
+    "package": "pnpm --filter app package"
+  },
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=9"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "electron",
+      "esbuild",
+      "electron-builder",
+      "@electron/node-gyp"
+    ]
+  }
+}

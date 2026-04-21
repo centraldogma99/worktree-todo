@@ -1,0 +1,17 @@
+appId: app.worktree-todo
+productName: Worktree Todo
+directories:
+  output: out
+files:
+  - dist/**
+  - resources/**
+  - package.json
+# Override the `name` field in the packaged package.json so Electron derives
+# a clean userData path (~/Library/Application Support/worktree-todo/) instead
+# of using the scoped pnpm package name (@worktree-todo/app).
+extraMetadata:
+  name: worktree-todo
+mac:
+  target: dir
+  identity: null
+  category: public.app-category.developer-tools

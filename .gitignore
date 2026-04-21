@@ -1,0 +1,26 @@
+# Dependencies
+node_modules
+
+# Build outputs
+dist
+out
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# Package manager lockfiles from other tools (we use pnpm only)
+package-lock.json
+yarn.lock
+
+# Runtime state from team/ralph orchestration (any depth)
+**/.omc/state/
+**/.omc/handoffs/
+**/.omc/logs/
+
+# Editor / OS
+*.swp
+.vscode/
+.idea/

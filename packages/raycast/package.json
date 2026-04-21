@@ -1,0 +1,38 @@
+{
+  "name": "worktree-todo-raycast",
+  "title": "Worktree Todo",
+  "description": "Git worktree quick switcher — shares registry with the menubar app",
+  "icon": "icon.png",
+  "author": "you",
+  "license": "MIT",
+  "type": "module",
+  "commands": [
+    {
+      "name": "list-worktrees",
+      "title": "List Worktrees",
+      "subtitle": "Worktree Todo",
+      "description": "Browse, search, open, and remove git worktrees",
+      "mode": "view"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.80.0",
+    "@raycast/utils": "^1.17.0",
+    "@worktree-todo/core": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/react": "^18.3.0",
+    "react": "^18.3.0",
+    "typescript": "^5.4.0",
+    "@raycast/eslint-config": "^1.0.11",
+    "eslint": "^8.57.0"
+  },
+  "scripts": {
+    "build": "ray build",
+    "dev": "ray develop",
+    "lint": "ray lint",
+    "fix-lint": "ray lint --fix",
+    "publish": "npx @raycast/api@latest publish"
+  }
+}
